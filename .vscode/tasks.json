@@ -1,0 +1,101 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        // x64 Debug
+        {
+            "label": "build-x64-debug",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/LEDStripController.csproj",
+                "-c",
+                "Debug",
+                "-r",
+                "win-x64"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        // x64 Release
+        {
+            "label": "build-x64-release",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/LEDStripController.csproj",
+                "-c",
+                "Release",
+                "-r",
+                "win-x64"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        // x86 Debug
+        {
+            "label": "build-x86-debug",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/LEDStripController.csproj",
+                "-c",
+                "Debug",
+                "-r",
+                "win-x86"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        // x86 Release
+        {
+            "label": "build-x86-release",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/LEDStripController.csproj",
+                "-c",
+                "Release",
+                "-r",
+                "win-x86"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        // ARM64 Debug
+        {
+            "label": "build-arm64-debug",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/LEDStripController.csproj",
+                "-c",
+                "Debug",
+                "-r",
+                "win-arm64"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        },
+        // ARM64 Release
+        {
+            "label": "build-arm64-release",
+            "command": "dotnet",
+            "type": "shell",
+            "args": [
+                "build",
+                "${workspaceFolder}/LEDStripController.csproj",
+                "-c",
+                "Release",
+                "-r",
+                "win-arm64"
+            ],
+            "problemMatcher": "$msCompile",
+            "group": "build"
+        }
+    ]
+}

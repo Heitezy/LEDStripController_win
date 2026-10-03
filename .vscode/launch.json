@@ -1,0 +1,55 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        // Debug Configurations
+        {
+            "name": "Debug (x64)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build-x64-debug",
+            "program": "${workspaceFolder}/bin/Debug/net8.0-windows10.0.19041.0/win-x64/LEDStripController.exe",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug (x86)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build-x86-debug",
+            "program": "${workspaceFolder}/bin/Debug/net8.0-windows10.0.19041.0/win-x86/LEDStripController.exe",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Debug (ARM64)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build-arm64-debug",
+            "program": "${workspaceFolder}/bin/Debug/net8.0-windows10.0.19041.0/win-arm64/LEDStripController.exe",
+            "cwd": "${workspaceFolder}"
+        },
+        // Release Configurations
+        {
+            "name": "Release (x64)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build-x64-release",
+            "program": "${workspaceFolder}/bin/Release/net8.0-windows10.0.19041.0/win-x64/LEDStripController.exe",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Release (x86)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build-x86-release",
+            "program": "${workspaceFolder}/bin/Release/net8.0-windows10.0.19041.0/win-x86/LEDStripController.exe",
+            "cwd": "${workspaceFolder}"
+        },
+        {
+            "name": "Release (ARM64)",
+            "type": "dotnet",
+            "request": "launch",
+            "preLaunchTask": "build-arm64-release",
+            "program": "${workspaceFolder}/bin/Release/net8.0-windows10.0.19041.0/win-arm64/LEDStripController.exe",
+            "cwd": "${workspaceFolder}"
+        }
+    ]
+}
